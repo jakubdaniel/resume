@@ -1,4 +1,5 @@
 \font\huge=cmr16 at 24pt
+\font\sc=cmcsc10 at 10pt
 
 \def\indent{\hskip2em}
 \def\vsep{\vskip1.5em}
@@ -16,10 +17,10 @@
     \cr
 
     Date of Birth:  & 2 July 1989\cr
-    Place of Birth: & Brand\'ys nad Labem\cr
-    Residence:      & Prague\cr
+    Place of Birth: & Brand\'ys nad Labem, Czech Republic\cr
+    Residence:      & Prague, Czech Republic\cr
     Nationality:    & Czech\cr
-    Languages:      & Czech (native), English (FCE awarded in 2007), Spanish (basic)\cr
+    Languages:      & Czech (native), English (FCE awarded in 2007)\cr
   }
   \vsep
   \vfil
@@ -27,17 +28,17 @@
     \indent \hbox to 8em{#\hfil}&#\hfil\cr
     \multispan2{\bf Contact} \hfil\cr
     \cr
-  
+
     Address: & Department of Distributed and Dependable Systems \cr
              & Faculty of Mathematics and Physics \cr
              & Charles Univesity in Prague \cr
     \cr
-  
+
              & Malostransk\'e N\'am\v{e}st\'{\i} 25, 118 00 Prague 1, Czech Republic \cr
     \cr
-  
-    E-Mail:  & daniel@d3s.mff.cuni.cz \cr
-    WWW:     & http://d3s.mff.cuni.cz/\~{ }daniel \cr
+
+    E-Mail:  & {\tt daniel@d3s.mff.cuni.cz} \cr
+    WWW:     & {\tt http://d3s.mff.cuni.cz/\~{ }daniel} \cr
   }
   \vsep
   \vfil
@@ -49,22 +50,24 @@
     PhD studies focused on Program Verification (Computer Science) since 2013\cr
     Faculty of Mathematics and Physics, Charles University in Prague\cr
     \cr
-  
+
     Mgr. (MSc equivalent) in Computer Science 2011--2013 \cr
     Faculty of Mathematics and Physics, Charles University in Prague \cr
     \cr
-  
+
     Bc. in Computer Science 2008--2011 \cr
     Faculty of Mathematics and Physics, Charles University in Prague \cr
   }
   \vsep
   \vfil
   \halign{%
-    \indent #\hfil\cr
-    \multispan1{\bf Projects} \cr
+    %\indent #\hfil\cr
+    \indent {\hsize=4em #\hfil}&{\advance\hsize by -7em \vtop{\parindent=0pt #}\hfil} \cr
+    \multispan2{\bf Software Projects} \hfil\cr
     \cr
-  
-    Abstraction Model Checking within Google Summer of Code 2013 \cr
+
+    {\sc Panda} & - {\it Predicate Abstraction in Dynamic Analysis} (since Google Summer of Code 2013) \cr
+                & - {\tt https://github.com/d3sformal/panda.git} \cr
   }
   \vsep
   \vfil
@@ -72,8 +75,12 @@
     \indent {\hsize=4em #\hfil}\hskip1em&{\advance\hsize by -7em \vtop{\parindent=0pt #}\hfil} \cr
     \multispan2{\bf Publications} \hfil\cr
     \cr
-  
-    [1] & J. Daniel, P. Par\'{\i}zek, C. P\u{a}s\u{a}reanu. Predicate Abstraction in Java Pathfinder. In Proceedings of the Java Pathfinder Workshop 2013. \cr
+
+    [1] & J. Daniel, P. Par\'{\i}zek. Predicate Abstraction in Program Verification: Survey and Current Trends. Accepted for publication, 2014 \cr
+
+    \cr
+
+    [2] & J. Daniel, P. Par\'{\i}zek, C. P\u{a}s\u{a}reanu. Predicate Abstraction in Java Pathfinder. In Proceedings of the Java Pathfinder Workshop 2013, ACM SIGSOFT Software Engineering Notes, November 2013 \cr
   }
   \vsep
   \vfil
@@ -81,12 +88,13 @@
     \indent {\hsize=5em #\hfil}\hskip1em&{\hsize=5em #\hfil}\hskip1em& {#}\hskip1em& {#}\hfil \cr
     \multispan4{\bf Teaching Experiences} \hfil\cr
     \cr
-  
-    Fall & 2013 & Developing Applications for Mobile Devices & Charles University \cr
+
+    Winter & 2013 & Developing Applications for Mobile Devices & Charles University \cr
+    Summer & 2014 & System Behaviour Models and Verification   & Charles University \cr
   }
   \vfil
   \vsep
   \hrule
 }
- 
+
 \bye
