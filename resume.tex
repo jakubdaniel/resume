@@ -2,17 +2,34 @@
 \font\sc=cmcsc10 at 10pt
 
 \def\indent{\hskip2em}
-\def\vsep{\vskip1.5em}
+\def\vsep{\vskip1.5em\vfil}
 
-\nopagenumbers
+\vsize=8.5in
 
-\vbox to \vsize {
+\setbox0=\vbox{
   \hbox to \hsize {\huge \hfill Jakub Daniel \hfill}
   \vsep
   \hbox to \hsize {\hfill Curriculum Vitae \hfill}
-  \vsep
-  \hrule
-  \vsep
+}
+
+\output={
+  \setbox255=\vbox{
+    \unvbox0
+    \vsep
+    \hrule
+    \vsep
+    \vbox to \vsize {\unvbox255}
+    \vfil
+    \vsep
+    \hrule
+    \vsep
+    \hfil\the\pageno\hfil
+    \global\advance\pageno1
+  }
+  \shipout\box255
+}
+
+%\vbox{
 %  \halign{%
 %    \indent \hbox to 8em{#\hfil}&#\hfil\cr
 %    \multispan2{\bf Personal} \hfil\cr
@@ -24,8 +41,9 @@
 %    Nationality:    & Czech\cr
 %    Languages:      & Czech (native), English (FCE awarded in 2007)\cr
 %  }
-%  \vsep
-  \vfil
+%}
+%\vsep
+\vbox{
   \halign{%
     \indent \hbox to 8em{#\hfil}&#\hfil\cr
     \multispan2{\bf Contact} \hfil\cr
@@ -41,8 +59,9 @@
     E-Mail:  & {\tt daniel@d3s.mff.cuni.cz} \cr
     WWW:     & {\tt http://d3s.mff.cuni.cz/\~{ }daniel} \cr
   }
-  \vsep
-  \vfil
+}
+\vsep
+\vbox{
   \halign{%
     \indent #\hfil\cr
     \multispan1{\bf Education} \cr
@@ -61,8 +80,9 @@
     Bc. in Computer Science 2008--2011 \cr
     Faculty of Mathematics and Physics, Charles University in Prague \cr
   }
-  \vsep
-  \vfil
+}
+\vsep
+\vbox{
   \halign{%
     \indent #\hfil\cr
     \multispan1{\bf Software} \cr
@@ -71,15 +91,16 @@
     Started as Google Summer of Code project in 2013 \cr
     {\tt https://github.com/d3sformal/panda.git} \cr
   }
-  \vsep
-  \vfil
+}
+\vsep
+\vbox{
   \halign{%
     \indent {\hsize=4em #\hfil}\hskip1em&{\advance\hsize by -7em \vtop{\parindent=0pt #}\hfil} \cr
     \multispan2{\bf Publications} \hfil\cr
     \cr
 
     %[1] & J. Daniel and P. Par\'{\i}zek. Predicate Abstraction in Program Verification: Survey and Current Trends. Accepted for publication in Proceedings of ICCSW 2014 \cr
-    [1] & J. Daniel and P. Parizek. Predicate Abstraction in Program Verification: Survey and Current Trends. Accepted for publication in Proceedings of ICCSW 2014 \cr
+    [1] & J. Daniel and P. Parizek. Predicate Abstraction in Program Verification: Survey and Current Trends. In Proceedings of 2014 Imperial College Computing Student Workshop, OASIcs, vol. 43. \cr
     \cr
 
     %[2] & J. Daniel, P. Par\'{\i}zek, and C. P\u{a}s\u{a}reanu. Predicate Abstraction in Java Pathfinder. In Proceedings of the Java Pathfinder Workshop 2013, ACM SIGSOFT Software Engineering Notes, 39(1) \cr
@@ -90,8 +111,9 @@
     %[3] & T. Knap, J. Michelfeit, J. Daniel, P. Jerman, D. Rychnovsk\'{y}, T. Soukup, and M. Ne\v{c}ask\'{y}. ODCleanStore: A Framework for Managing and Providing Integrated Linded Data on the Web. In Proceedings of WISE 2012, LNCS, vol. 7651\cr
     [3] & T. Knap, J. Michelfeit, J. Daniel, P. Jerman, D. Rychnovsky, T. Soukup, and M. Necasky. ODCleanStore: A Framework for Managing and Providing Integrated Linded Data on the Web. In Proceedings of WISE 2012, LNCS, vol. 7651\cr
   }
-  \vsep
-  \vfil
+}
+\vsep
+\vbox{
   \halign to \hsize {%
     \indent {\hsize=5em #\hfil}\hskip1em& {#}\hskip1em& {#}\hfil \cr
     \multispan3{\bf Teaching Experience} \hfil\cr
@@ -99,18 +121,18 @@
 
     Winter 2013 & Developing Applications for Mobile Devices & Charles University in Prague\cr
     Summer 2014 & System Behaviour Models and Verification   & Charles University in Prague\cr
+    Winter 2014 & Developing Applications for Mobile Devices & Charles University in Prague\cr
+    Winter 2014 & Java                                       & Charles University in Prague\cr
   }
-  \vfil
-  \vsep
+}
+\vsep
+\vbox{
   \halign{%
     \indent \hbox to \hsize{#\hfil}&#\hfil\cr
     \multispan1{\bf Languages} \hfil\cr
     \cr
     Czech (native), English (FCE awarded in 2007) \cr
   }
-  \vsep
-  \vfil
-  \hrule
 }
 
 \bye
