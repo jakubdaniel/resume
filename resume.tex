@@ -5,6 +5,7 @@
 \def\vsep{\vskip1.5em\vfil}
 
 \vsize=8.5in
+\voffset=-0.25in
 
 \setbox0=\vbox{
   \hbox to \hsize {\huge \hfill Jakub Daniel \hfill}
@@ -14,7 +15,9 @@
 
 \output={
   \setbox255=\vbox{
-    \unvbox0
+    \vbox to 0.625in {
+      \unvbox0
+    }
     \vsep
     \hrule
     \vsep
@@ -99,17 +102,20 @@
     \multispan2{\bf Publications} \hfil\cr
     \cr
 
-    %[1] & J. Daniel and P. Par\'{\i}zek. Predicate Abstraction in Program Verification: Survey and Current Trends. Accepted for publication in Proceedings of ICCSW 2014 \cr
-    [1] & J. Daniel and P. Parizek. Predicate Abstraction in Program Verification: Survey and Current Trends. In Proceedings of 2014 Imperial College Computing Student Workshop, OASIcs, vol. 43. \cr
+    [1] & T. Ball and J. Daniel. Deconstructing Dynamic Symbolic Execution. In Proceedings of the 2014 Marktoberdorf Summer School on Dependable Software Systems Engineering, IOS Press, Jan 2015. \cr
     \cr
 
-    %[2] & J. Daniel, P. Par\'{\i}zek, and C. P\u{a}s\u{a}reanu. Predicate Abstraction in Java Pathfinder. In Proceedings of the Java Pathfinder Workshop 2013, ACM SIGSOFT Software Engineering Notes, 39(1) \cr
-    [2] & J. Daniel, P. Parizek, and C. Pasareanu. Predicate Abstraction in Java Pathfinder. In Proceedings of the Java Pathfinder Workshop 2013, ACM SIGSOFT Software Engineering Notes, 39(1) \cr
+    %[2] & J. Daniel and P. Par\'{\i}zek. Predicate Abstraction in Program Verification: Survey and Current Trends. Accepted for publication in Proceedings of ICCSW 2014 \cr
+    [2] & J. Daniel and P. Parizek. Predicate Abstraction in Program Verification: Survey and Current Trends. In Proceedings of 2014 Imperial College Computing Student Workshop, OASIcs, vol. 43. \cr
+    \cr
+
+    %[3] & J. Daniel, P. Par\'{\i}zek, and C. P\u{a}s\u{a}reanu. Predicate Abstraction in Java Pathfinder. In Proceedings of the Java Pathfinder Workshop 2013, ACM SIGSOFT Software Engineering Notes, 39(1) \cr
+    [3] & J. Daniel, P. Parizek, and C. Pasareanu. Predicate Abstraction in Java Pathfinder. In Proceedings of the Java Pathfinder Workshop 2013, ACM SIGSOFT Software Engineering Notes, 39(1) \cr
     \cr
 
     % Garbage item. Nothing to do with me!
-    %[3] & T. Knap, J. Michelfeit, J. Daniel, P. Jerman, D. Rychnovsk\'{y}, T. Soukup, and M. Ne\v{c}ask\'{y}. ODCleanStore: A Framework for Managing and Providing Integrated Linded Data on the Web. In Proceedings of WISE 2012, LNCS, vol. 7651\cr
-    [3] & T. Knap, J. Michelfeit, J. Daniel, P. Jerman, D. Rychnovsky, T. Soukup, and M. Necasky. ODCleanStore: A Framework for Managing and Providing Integrated Linded Data on the Web. In Proceedings of WISE 2012, LNCS, vol. 7651\cr
+    %[4] & T. Knap, J. Michelfeit, J. Daniel, P. Jerman, D. Rychnovsk\'{y}, T. Soukup, and M. Ne\v{c}ask\'{y}. ODCleanStore: A Framework for Managing and Providing Integrated Linded Data on the Web. In Proceedings of WISE 2012, LNCS, vol. 7651\cr
+    [4] & T. Knap, J. Michelfeit, J. Daniel, P. Jerman, D. Rychnovsky, T. Soukup, and M. Necasky. ODCleanStore: A Framework for Managing and Providing Integrated Linded Data on the Web. In Proceedings of WISE 2012, LNCS, vol. 7651\cr
   }
 }
 \vsep
