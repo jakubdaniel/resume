@@ -13,23 +13,22 @@
   \hbox to \hsize {\hfill Curriculum Vitae \hfill}
 }
 
-\output={
-  \setbox255=\vbox{
-    \vbox to 0.625in {
-      \unvbox0
-    }
-    \vsep
-    \hrule
-    \vsep
-    \vbox to \vsize {\unvbox255}
-    \vfil
-    \vsep
-    \hrule
-    \vsep
-    \hfil\the\pageno\hfil
-    \global\advance\pageno1
-  }
-  \shipout\box255
+\output={%
+  \setbox255=\vbox{%
+    \vbox to 0.625in {%
+      \unvbox0%
+    }%
+    \vsep%
+    \hrule%
+      \vsep%
+      \vbox to \vsize {\unvbox255\vfil}%
+      \vsep%
+    \hrule%
+    \vsep%
+    \hfil\the\pageno\hfil%
+    \global\advance\pageno1%
+  }%
+  \shipout\box255%
 }
 
 %\vbox{
@@ -102,33 +101,35 @@
     \multispan2{\bf Publications} \hfil\cr
     \cr
 
-    [1] & T. Ball and J. Daniel. Deconstructing Dynamic Symbolic Execution. In Proceedings of the 2014 Marktoberdorf Summer School on Dependable Software Systems Engineering, IOS Press, Jan 2015. \cr
+    [1] & J. Daniel and P. Parizek. {\sc Panda}: Simultaneous Predicate Abstraction and Concrete Execution. Accepted for publication in Proceedings of HVC 2015. \cr
     \cr
 
-    %[2] & J. Daniel and P. Par\'{\i}zek. Predicate Abstraction in Program Verification: Survey and Current Trends. Accepted for publication in Proceedings of ICCSW 2014 \cr
-    [2] & J. Daniel and P. Parizek. Predicate Abstraction in Program Verification: Survey and Current Trends. In Proceedings of 2014 Imperial College Computing Student Workshop, OASIcs, vol. 43. \cr
+    [2] & T. Ball and J. Daniel. Deconstructing Dynamic Symbolic Execution. In Proceedings of the 2014 Marktoberdorf Summer School on Dependable Software Systems Engineering, IOS Press, Jan 2015. \cr
     \cr
 
-    %[3] & J. Daniel, P. Par\'{\i}zek, and C. P\u{a}s\u{a}reanu. Predicate Abstraction in Java Pathfinder. In Proceedings of the Java Pathfinder Workshop 2013, ACM SIGSOFT Software Engineering Notes, 39(1) \cr
-    [3] & J. Daniel, P. Parizek, and C. Pasareanu. Predicate Abstraction in Java Pathfinder. In Proceedings of the Java Pathfinder Workshop 2013, ACM SIGSOFT Software Engineering Notes, 39(1) \cr
+    %[3] & J. Daniel and P. Par\'{\i}zek. Predicate Abstraction in Program Verification: Survey and Current Trends. Accepted for publication in Proceedings of ICCSW 2014 \cr
+    [3] & J. Daniel and P. Parizek. Predicate Abstraction in Program Verification: Survey and Current Trends. In Proceedings of 2014 Imperial College Computing Student Workshop, OASIcs, vol. 43. \cr
+    \cr
+
+    %[4] & J. Daniel, P. Par\'{\i}zek, and C. P\u{a}s\u{a}reanu. Predicate Abstraction in Java Pathfinder. In Proceedings of the Java Pathfinder Workshop 2013, ACM SIGSOFT Software Engineering Notes, 39(1) \cr
+    [4] & J. Daniel, P. Parizek, and C. Pasareanu. Predicate Abstraction in Java Pathfinder. In Proceedings of the Java Pathfinder Workshop 2013, ACM SIGSOFT Software Engineering Notes, 39(1) \cr
     \cr
 
     % Garbage item. Nothing to do with me!
-    %[4] & T. Knap, J. Michelfeit, J. Daniel, P. Jerman, D. Rychnovsk\'{y}, T. Soukup, and M. Ne\v{c}ask\'{y}. ODCleanStore: A Framework for Managing and Providing Integrated Linded Data on the Web. In Proceedings of WISE 2012, LNCS, vol. 7651\cr
-    [4] & T. Knap, J. Michelfeit, J. Daniel, P. Jerman, D. Rychnovsky, T. Soukup, and M. Necasky. ODCleanStore: A Framework for Managing and Providing Integrated Linded Data on the Web. In Proceedings of WISE 2012, LNCS, vol. 7651\cr
+    %[5] & T. Knap, J. Michelfeit, J. Daniel, P. Jerman, D. Rychnovsk\'{y}, T. Soukup, and M. Ne\v{c}ask\'{y}. ODCleanStore: A Framework for Managing and Providing Integrated Linded Data on the Web. In Proceedings of WISE 2012, LNCS, vol. 7651\cr
+    [5] & T. Knap, J. Michelfeit, J. Daniel, P. Jerman, D. Rychnovsky, T. Soukup, and M. Necasky. ODCleanStore: A Framework for Managing and Providing Integrated Linded Data on the Web. In Proceedings of WISE 2012, LNCS, vol. 7651\cr
   }
 }
 \vsep
 \vbox{
   \halign to \hsize {%
-    \indent {\hsize=5em #\hfil}\hskip1em& {#}\hskip1em& {#}\hfil \cr
+    \indent {\hsize=5em #\hfil}&{\hsize=5em #\hfil}\hskip1em& {#}\hskip1em& {#}\hfil \cr
     \multispan3{\bf Teaching Experience} \hfil\cr
     \cr
 
-    Winter 2013 & Developing Applications for Mobile Devices & Charles University in Prague\cr
-    Summer 2014 & System Behaviour Models and Verification   & Charles University in Prague\cr
-    Winter 2014 & Developing Applications for Mobile Devices & Charles University in Prague\cr
-    Winter 2014 & Java                                       & Charles University in Prague\cr
+    Summer & '14, '15 & System Behaviour Models and Verification   & Charles University in Prague\cr
+    Winter & '13, '14 & Developing Applications for Mobile Devices & Charles University in Prague\cr
+    Winter & '14      & Java                                       & Charles University in Prague\cr
   }
 }
 \vsep
