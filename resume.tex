@@ -75,6 +75,7 @@
     \cr
 
     Mgr. (MSc equivalent) in Computer Science 2011--2013 \cr
+    %RNDr. (MSc extension) in Computer Science 2016 \cr
     Faculty of Mathematics and Physics, Charles University in Prague \cr
     thesis: Analysis of Interface Automata with On-Demand Replication\cr
     \cr
@@ -95,30 +96,32 @@
   }
 }
 \vsep
-\vbox{
-  \halign{%
-    \indent {\hsize=4em #\hfil}\hskip1em&{\advance\hsize by -7em \vtop{\parindent=0pt #}\hfil} \cr
-    \multispan2{\bf Publications} \hfil\cr
-    \cr
+{
+  \newcount\pubnum
+  \pubnum=0
+  \def\item{\cr\global\advance\pubnum by 1[\the\pubnum] &}
+  \vbox{
+    \halign{%
+      \indent {\hsize=4em #\hfil}\hskip1em&{\advance\hsize by -7em \vtop{\parindent=0pt #}\hfil} \cr
+      \multispan2{\bf Publications} \hfil\cr
 
-    [1] & J. Daniel and P. Parizek. {\sc Panda}: Simultaneous Predicate Abstraction and Concrete Execution. Accepted for publication in Proceedings of HVC 2015. \cr
-    \cr
+      \item J. Daniel, A. Cimatti, A. Griggio, S. Tonetta, and S. Mover. Infinite-state Liveness-to-Safety via Implicit Abstraction and Well-founded Relations. Accepted for publication in Proceedings of CAV 2016. \cr
 
-    [2] & T. Ball and J. Daniel. Deconstructing Dynamic Symbolic Execution. In Proceedings of the 2014 Marktoberdorf Summer School on Dependable Software Systems Engineering, IOS Press, Jan 2015. \cr
-    \cr
+      \item J. Daniel and P. Parizek. {\sc Panda}: Simultaneous Predicate Abstraction and Concrete Execution. In Proceedings of the 11th Haifa Verification Conference, LNCS, vol. 9434, Nov 2015. \cr
 
-    %[3] & J. Daniel and P. Par\'{\i}zek. Predicate Abstraction in Program Verification: Survey and Current Trends. Accepted for publication in Proceedings of ICCSW 2014 \cr
-    [3] & J. Daniel and P. Parizek. Predicate Abstraction in Program Verification: Survey and Current Trends. In Proceedings of 2014 Imperial College Computing Student Workshop, OASIcs, vol. 43. \cr
-    \cr
+      \item T. Ball and J. Daniel. Deconstructing Dynamic Symbolic Execution. In Proceedings of the 2014 Marktoberdorf Summer School on Dependable Software Systems Engineering, IOS Press, Jan 2015. \cr
 
-    %[4] & J. Daniel, P. Par\'{\i}zek, and C. P\u{a}s\u{a}reanu. Predicate Abstraction in Java Pathfinder. In Proceedings of the Java Pathfinder Workshop 2013, ACM SIGSOFT Software Engineering Notes, 39(1) \cr
-    [4] & J. Daniel, P. Parizek, and C. Pasareanu. Predicate Abstraction in Java Pathfinder. In Proceedings of the Java Pathfinder Workshop 2013, ACM SIGSOFT Software Engineering Notes, 39(1) \cr
-    \cr
+      %\item J. Daniel and P. Par\'{\i}zek. Predicate Abstraction in Program Verification: Survey and Current Trends. Accepted for publication in Proceedings of ICCSW 2014 \cr
+      \item J. Daniel and P. Parizek. Predicate Abstraction in Program Verification: Survey and Current Trends. In Proceedings of 2014 Imperial College Computing Student Workshop, OASIcs, vol. 43. \cr
 
-    % Garbage item. Nothing to do with me!
-    %[5] & T. Knap, J. Michelfeit, J. Daniel, P. Jerman, D. Rychnovsk\'{y}, T. Soukup, and M. Ne\v{c}ask\'{y}. ODCleanStore: A Framework for Managing and Providing Integrated Linded Data on the Web. In Proceedings of WISE 2012, LNCS, vol. 7651\cr
-    [5] & T. Knap, J. Michelfeit, J. Daniel, P. Jerman, D. Rychnovsky, T. Soukup, and M. Necasky. ODCleanStore: A Framework for Managing and Providing Integrated Linded Data on the Web. In Proceedings of WISE 2012, LNCS, vol. 7651\cr
+      %\item J. Daniel, P. Par\'{\i}zek, and C. P\u{a}s\u{a}reanu. Predicate Abstraction in Java Pathfinder. In Proceedings of the Java Pathfinder Workshop 2013, ACM SIGSOFT Software Engineering Notes, 39(1) \cr
+      \item J. Daniel, P. Parizek, and C. Pasareanu. Predicate Abstraction in Java Pathfinder. In Proceedings of the Java Pathfinder Workshop 2013, ACM SIGSOFT Software Engineering Notes, 39(1) \cr
+
+      % Garbage item. Nothing to do with me!
+      %\item T. Knap, J. Michelfeit, J. Daniel, P. Jerman, D. Rychnovsk\'{y}, T. Soukup, and M. Ne\v{c}ask\'{y}. ODCleanStore: A Framework for Managing and Providing Integrated Linded Data on the Web. In Proceedings of WISE 2012, LNCS, vol. 7651, Nov 2012.\cr
+      \item T. Knap, J. Michelfeit, J. Daniel, P. Jerman, D. Rychnovsky, T. Soukup, and M. Necasky. ODCleanStore: A Framework for Managing and Providing Integrated Linded Data on the Web. In Proceedings of WISE 2012, LNCS, vol. 7651, Nov 2012.\cr
   }
+}
 }
 \vsep
 \vbox{
@@ -128,7 +131,7 @@
     \cr
 
     Summer & '14, '15 & System Behaviour Models and Verification   & Charles University in Prague\cr
-    Winter & '13, '14 & Developing Applications for Mobile Devices & Charles University in Prague\cr
+    %Winter & '13, '14 & Developing Applications for Mobile Devices & Charles University in Prague\cr
     Winter & '14      & Java                                       & Charles University in Prague\cr
   }
 }
