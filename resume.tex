@@ -152,13 +152,13 @@
 \vsep
 \vbox{
   \halign{%
-    \indent \hbox to \hsize{#\hfil}&#\hfil\cr
+    \indent \hbox to \hsize{\vtop{\parindent=0pt #}\hfil}&#\hfil\cr
     \multispan1{\bf Skills} \hfil\cr
     \cr
 
-    {\tt Haskell}, {\tt C}, {\tt Java}, %({\tt C++}, {\tt Python}, {\tt Javascript}, {\tt Prolog}, etc.), 
+    {\tt haskell}, {\tt c}, {\tt java}, {\tt c++}, %{\tt Python}, {\tt Javascript}, {\tt Prolog}, 
     {\tt git}, {\tt hg}, {\tt svn},
-    {\tt make}, {\tt autotools}, {\tt ant}, %({\tt maven}),
+    {\tt make}, {\tt autotools}, {\tt ant}, %{\tt maven},
     {\tt gdb},
     {\tt junit},
     {\tt jpf},
@@ -166,6 +166,16 @@
     \cr
   }
 }
+\vsep
+\vbox{
+  \halign{%
+    \indent \hbox to \hsize{\vtop{\parindent=0pt #}\hfil}&#\hfil\cr
+    \multispan1{\bf Interests} \hfil\cr
+    \cr
 
+    category theory, functional programming, formal verification, program analysis, computability, computational complexity
+    \cr
+  }
+}
 
 \bye
