@@ -1,3 +1,5 @@
+\input graphicx.tex
+
 \font\huge=cmr16 at 24pt
 \font\sc=cmcsc10 at 10pt
 
@@ -8,14 +10,19 @@
 \voffset=-0.25in
 
 \setbox0=\vbox{
-  \hbox to \hsize {\huge \hfill Jakub Daniel \hfill}
-  \vsep
-  \hbox to \hsize {\hfill Curriculum Vitae \hfill}
+  \vskip-0.5in%
+  \vbox to 0pt {\rlap{\includegraphics[trim={5cm 18cm 5cm 0},clip,width=4cm,keepaspectratio]{photo.jpg}}\vss}%
+  \vskip0.5in%
+  \vbox{%
+    \hbox to \hsize {\huge \hfill Jakub Daniel \hfill}%
+    \vsep%
+    \hbox to \hsize {\hfill Curriculum Vitae \hfill}%
+  }%
 }
 
 \output={%
   \setbox255=\vbox{%
-    \vbox to 0.625in {%
+    \vbox to 1in {%
       \unvbox0%
     }%
     \vsep%
